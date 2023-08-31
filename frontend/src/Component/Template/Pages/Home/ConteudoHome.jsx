@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import listaProdutos from '../Produtos/Home/HomeProdutos'
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function Home() {
             <p className="card-text">
               <i>Café autêntico, clássico e maravilhoso</i>
             </p>
-            <Link to="/produtos/cafeexpresso" className="btn btn-danger">
+            <Link to="/produtos/cafeexpresso" components={listaProdutos} className="btn btn-danger">
               Saiba mais
             </Link>
           </div>
