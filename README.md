@@ -30,13 +30,14 @@ https://github.com/LordRyanII/Cafeteria_marketplacev2.0/blob/main/frontend/src/C
 - Após use as seguinter uri: 
 	-  GET: http://localhost:3002/produtos/res/produtos/  => Lista produtos do banco de dados | 
 	- POST: http://localhost:3002/produtos/create/produto/ => Cria os Produtos 
-		- Body: {
+		- Body:
 
-				"produto":  "string", //Nome do produto ou tipo| obrigatório
-				"descricao":  "string" //Descrição do produto | obrigatório
-				"preco_compra":  Number, //Valor do produto | obrigatório
-				"quantidade":  "string", //Tamanho do produto, peso... |obrigatório
-				"image":  "string" //Url do produto
+				{
+					"produto":  "string", //Nome do produto ou tipo| obrigatório
+					"descricao":  "string" //Descrição do produto | obrigatório
+					"preco_compra":  Number, //Valor do produto | obrigatório
+					"quantidade":  "string", //Tamanho do produto, peso... |obrigatório
+					"image":  "string" //Url do produto
 				}
 				 
 
