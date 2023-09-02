@@ -25,7 +25,7 @@
 - Na pasta backend, no terminal, tanto do vscode ou poweShell. Digite: npm i (para instalar as bibliotecas)<br>
 - Após é necessário criar um arquivo .env, nele crie uma variável chamada: URLCONNECTIONMONGO, e coloque o valor da uri do seu banco de dados mongoDb <br>
 - No postman, copie as uri, o terminal do vscode ou powerShell se tudo ocorrer bem mostrará uma mensagem assim: <br>
-![enter image description here](https://github.com/LordRyanII/Cafeteria_marketplacev2.0/blob/main/frontend/src/Component/assets/img/image.png)
+https://github.com/LordRyanII/Cafeteria_marketplacev2.0/blob/main/frontend/src/Component/assets/img/image.png
 
 - Após use as seguinter uri: 
 	-  GET: http://localhost:3002/produtos/res/produtos/  => Lista produtos do banco de dados | 
