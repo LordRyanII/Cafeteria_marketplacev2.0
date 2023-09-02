@@ -4,6 +4,7 @@
 - Frameworks, bibliotecas usadas e banco de dados<br>
 <ul>
       <li>  Node.js  </li>
+      <li>  Bootstrap5  </li>
       <li>    React.js </li>
       <li>    Express </li>
       <li>    Axios   </li>
