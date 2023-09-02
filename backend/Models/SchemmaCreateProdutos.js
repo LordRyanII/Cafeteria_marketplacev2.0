@@ -9,4 +9,3 @@ const produtoSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Produtos', produtoSchema);
-//Usuarior2002
