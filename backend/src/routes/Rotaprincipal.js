@@ -5,4 +5,6 @@ const CreateProdutos = require('../controllers/Createproducts');
 router.use(express.json()); 
 router.use(express.urlencoded({ extended: true }));
 
-router.post('/create/produto', CreateProdutos.Create);
+router.post('/create/produto/', CreateProdutos.Create);
+
+module.exports = router
