@@ -1,4 +1,4 @@
-const SchemmaCreate = require('../../Models/SchemmaCreateProdutos');
+const SchemmaCreate = require('../../Models/CreateProdutos/SchemmaCreateProdutos');
 
 
 //Controller para criação de produtos no mongoDb
