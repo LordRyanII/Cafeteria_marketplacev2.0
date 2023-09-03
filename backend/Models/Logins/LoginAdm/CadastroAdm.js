@@ -3,11 +3,12 @@ const bcrypt = require('bcrypt');
 
 module.exports = class LoginSchema {
     constructor(data) {
-        const { nome, email, genero, senha } = data;
+        const { nome, email, genero, senha, profileFoto } = data;
         this.nome = nome;
         this.email = email;
         this.genero = genero;
         this.senha = senha;
+        this.profileFoto = profileFoto;
     }
 
     async criptografia() {
@@ -26,6 +27,7 @@ module.exports = class LoginSchema {
             email: String,
             senha: String,
             genero: String,
+            profileFoto: String
         });
 
         console.log(cadastroSchema);

@@ -2,7 +2,7 @@ const CadastroSchemma = require('../../Models/Logins/LoginAdm/CadastroAdm');
 
 exports.CadastroAdm = async (req, res) => {
     const data = req.body;
-
+    console.log(data)
     // Criptografa a senha
     try {
         const cadastro = new CadastroSchemma(data);
