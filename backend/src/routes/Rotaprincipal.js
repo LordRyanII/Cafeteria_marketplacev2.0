@@ -13,9 +13,11 @@ router.get('/produtos/res/produtos/', Produtos.listProdutos);
 router.delete('/produtos/delete/produtos/:id', Produtos.deleteProduto);
 router.put('/produtos/atualiza/produtos/:id', Produtos.atualizarProdutos);
 
-//Rota para login e cadastro
+//Rota para login e cadastro Adm
 router.post('/adm/cadastro', login.CadastroAdm);
 router.post('/adm/login', login.LoginAdm);
+
+//Rota para login e cadastro user
 
 
 module.exports = router

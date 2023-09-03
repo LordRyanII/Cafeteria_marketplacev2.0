@@ -1,6 +1,8 @@
 const CadastroSchemma = require('../../Models/Logins/LoginAdm/CadastroAdm');
 const LoginSchema = require('../../Models/Logins/LoginAdm/LoginAdm');
 
+//Controller para cadastroAdm
+
 exports.CadastroAdm = async (req, res) => {
     const data = req.body;
     console.log(data);
@@ -28,6 +30,7 @@ exports.CadastroAdm = async (req, res) => {
     }
 };
 
+//Controller para login Adm
 exports.LoginAdm = async (req, res) => {
     console.log(req.body);
     try {
@@ -40,7 +43,7 @@ exports.LoginAdm = async (req, res) => {
             res.status(200).json({
                 status: 'Ok',
                 mensagem: 'Usuário autenticado com sucesso.',
-                usuario: resultadoAutenticacao.userData
+                usuario: [resultadoAutenticacao.userData]
             });
         } else {
             res.status(401).json({
