@@ -12,6 +12,6 @@ app.use(routes);
 app.listen(porta, () => {
     mongoConnect._connect(process.env.URLCONNECTIONMONGO);
     console.log(`Servidor rodando na porta ${porta}`);
-    console.log('-----------------------------------');
+    console.log('------------------------------------------');
     console.log(`Endereço: http://localhost:${porta}`)
 })
