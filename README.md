@@ -1,3 +1,4 @@
+
 # Cafeteria_marketplacev2.0
  <h2>Sistema de cadastro de produtos, simulando uma cafeteria. Sistema FullStack com node.js</h2> <br>
  <p> O sistema tem mecânica CRUD (create, read, update e delete), autenticação, login e futuramente chatbot integrado. Se chama v2, pois a primeira versão usava o padrão mvc com o uso do ejs, esse padrão era um pouco limitado. </p><br>
@@ -19,4 +20,32 @@
 - Sistema para cadastro, atualização e delete de produtos (apenas adm) <br>
 - Futuramente sistema de chatbot integrado
 <br>
+<h2>Intalação Backend</h2>
+<p>Por enquanto o backend não está ligado ao frontend, porém no backend é possível criar os produtos, porém é necessário usar o postman</p>
+- Na pasta backend, no terminal, tanto do vscode ou poweShell. Digite: npm i (para instalar as bibliotecas)<br>
+- Após é necessário criar um arquivo .env, nele crie uma variável chamada: URLCONNECTIONMONGO, e coloque o valor da uri do seu banco de dados mongoDb <br>
+- No postman, copie as uri, o terminal do vscode ou powerShell se tudo ocorrer bem mostrará uma mensagem assim: <br>
+https://github.com/LordRyanII/Cafeteria_marketplacev2.0/blob/main/frontend/src/Component/assets/img/image.png
 
+- Após use as seguinter uri: 
+	-  GET: http://localhost:3002/produtos/res/produtos/  => Lista produtos do banco de dados | 
+	- POST: http://localhost:3002/produtos/create/produto/ => Cria os Produtos 
+		- Body:
+
+				{
+					"produto":  "string", //Nome do produto ou tipo| obrigatório
+					"descricao":  "string" //Descrição do produto | obrigatório
+					"preco_compra":  Number, //Valor do produto | obrigatório
+					"quantidade":  "string", //Tamanho do produto, peso... |obrigatório
+					"image":  "string" //Url do produto
+				}
+				 
+
+	- DELETE: http://localhost:3002/produtos/delete/produtos/{id do produto}  => Deleta algum produto 
+		- body: Não é necessário, apenas mudar a query
+	- PUT: http://localhost:3002/produtos/atualiza/produtos/{Id do produto}  => Atualiza no bd os produtos
+		- Body: Campos do post que queira atualizar, mas o id do produto
+
+<br>
+
+<br>
