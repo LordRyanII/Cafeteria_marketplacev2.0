@@ -1,4 +1,5 @@
 const CadastroSchemma = require('../../Models/Logins/LoginAdm/CadastroAdm');
+const LoginSchema = require('../../Models/Logins/LoginAdm/LoginAdm');
 
 exports.CadastroAdm = async (req, res) => {
     const data = req.body;
@@ -24,5 +25,30 @@ exports.CadastroAdm = async (req, res) => {
             status: 'Nok',
             message: "Erro ao realizar o cadastro: " + error.message,
         });
+    }
+};
+
+exports.LoginAdm = async (req, res) => {
+    console.log(req.body);
+    try {
+        const body = req.body;
+        const login = new LoginSchema(body);
+
+        const resultadoAutenticacao = await login.mongoLogin();
+
+        if (resultadoAutenticacao.status === 'Ok') {
+            res.status(200).json({
+                status: 'Ok',
+                mensagem: 'Usuário autenticado com sucesso.',
+                usuario: resultadoAutenticacao.userData
+            });
+        } else {
+            res.status(401).json({
+                status: 'Nok',
+                mensagem: resultadoAutenticacao.message
+            });
+        }
+    } catch (error) {
+        res.status(500).send("Ocorreu um erro no servidor: " + error.message);
     }
 };

@@ -15,6 +15,7 @@ router.put('/produtos/atualiza/produtos/:id', Produtos.atualizarProdutos);
 
 //Rota para login e cadastro
 router.post('/adm/cadastro', login.CadastroAdm);
+router.post('/adm/login', login.LoginAdm);
 
 
 module.exports = router
