@@ -2,7 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../Component/Template/Pages/Home/Telainicial";
 import Produtos from "../Component/Template/Pages/Produtos/Home/HomeProdutos";
-import About from '../Component/Template/Pages/About/About'
+import About from '../Component/Template/Pages/About/About';
+import Adm from '../Component/Template/Pages/Adm/Login/Adm';
+import AdmControle from '../Component/Template/Pages/Adm/Controle/Home'
+
 
 function App() {
   return (
@@ -11,6 +14,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/produtos/cafeexpresso" element={<Produtos />} />
         <Route path="/contato/sobre" element={<About />} />
+        <Route path="/Adm/login" element={<Adm />} />
+        <Route path="/Adm/controle" element={<AdmControle />} />
       </Routes>
     </BrowserRouter>
   );
