@@ -1,16 +1,16 @@
 import React from "react";
 import { Link, Route, useLocation } from "react-router-dom";
-import "../../../../assets/css/Adm.css";
+import  "./Adm.css";
 // import CadastroProdutos from "./CadastroProdutos";
 // import ConferirEstoque from "./ConferirEstoque";
 // import CadastroUsuario from "./CadastroUsuario";
 
 function Layout() {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     <div className="app-container">
-      <div className="menu">
+      <div className="menu-adm">
         <h2>Gerenciamento</h2>
         <hr />
         <ul>

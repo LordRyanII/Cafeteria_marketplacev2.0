@@ -1,8 +1,8 @@
 import React from "react";
-import Home from './Home';
+import Controle from './Home';
 
 function Controle(){
     return(
-        <Home />
+        <Controle />
     )
 }

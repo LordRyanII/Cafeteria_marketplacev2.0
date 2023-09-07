@@ -11,4 +11,10 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-
+ReactDOM.render(
+  <React.Fragment>
+      <App />
+    </React.Fragment>,
+    document.getElementById('root')
+  );
+  

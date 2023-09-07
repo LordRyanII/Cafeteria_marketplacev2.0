@@ -1,14 +1,14 @@
 import React from "react";
-import '../../assets/css/Header.css'
+import Style from './Header.module.css'
 
 
 function header() {
   return (
-    <header>
-      <div className="icons">
-        <li className="login-icons"></li>
-      </div>
-      <h1 className="header-top">
+    <header className={Style.header}>
+      {/* <div className="icons">
+      
+      </div> */}
+      <h1 className={Style.headerTop}>
         <strong> Le Renata</strong>
         <span><i>Cafeteria</i></span>
       </h1>

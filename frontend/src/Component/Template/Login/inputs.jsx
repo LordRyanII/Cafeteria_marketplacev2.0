@@ -1,27 +1,17 @@
 import React from "react";
 
-function Input() {
+function Input({ type, id, placeholder, value, onChange }) {
   return (
-    <div>
-      <div className="form-floating mb-3">
-        <input
-          type="email"
-          className="form-control"
-          id="floatingInput"
-          placeholder="name@example.com"
-        />
-        <label htmlFor="floatingInput">Endereço de email</label>
-      </div>
-      <div className="form-floating">
-        <input
-          type="password"
-          className="form-control"
-          id="floatingPassword"
-          placeholder="Password"
-        />
-        <label htmlFor="floatingPassword">Senha</label>
-        <br />
-      </div>
+    <div className="form-floating mb-3">
+      <input
+        type={type}
+        className="form-control"
+        id={id}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+      />
+      <label htmlFor={id}>{placeholder}</label>
     </div>
   );
 }

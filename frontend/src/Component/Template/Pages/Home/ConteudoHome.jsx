@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import listaProdutos from '../Produtos/Home/HomeProdutos'
+import Style from '../Home/HomePage.module.css'
 
 function Home() {
   return (
-    <div className="container text-center">
+    <div className={Style.ConteudoHomePage}>
       <div className="row">
         {/* Card Café expresso */}
         <div

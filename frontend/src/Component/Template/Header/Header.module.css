@@ -1,15 +1,16 @@
+
 /* Cabaçalho*/
 header {
-    background-image: url(../img//pexels-quintin-gellar-696205.jpg);
+    margin-top: -15px;
+    background-image: url(../../assets/img/pexels-quintin-gellar-696205.jpg);
     background-position: center;
     background-size: cover; /* Para ajustar a imagem ao tamanho do cabeçalho */
-    width: 100%;
+    width: 100vw;
     height: 20em;
 }
 
-.header-top {
+.headerTop {
     text-align: center;
-    margin-top: 10%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

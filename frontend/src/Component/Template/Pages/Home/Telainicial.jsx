@@ -1,5 +1,5 @@
 import Header from "../../Header/Header";
-import Nav from "../../Nav/Nav";
+import Nav from "../../Nav/Nav"
 import Home from "./ConteudoHome"
 import 'bootstrap'
 
