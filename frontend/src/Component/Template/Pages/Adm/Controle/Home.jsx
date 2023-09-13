@@ -13,16 +13,19 @@ function Layout() {
       <div className="menu-adm">
         <h2>Gerenciamento</h2>
         <hr />
-        <ul>
+        <ul className="nav-produtos">
           <li>
             <Link to="/Adm/CadastroProdutos">Cadastro de Produtos</Link>
           </li>
+          <hr />
           <li>
             <Link to="/Adm/EstoqueProdutos">Conferir Estoque</Link>
           </li>
+          <hr />
           <li>
             <Link to="/CadastroUser">Cadastro de Usuário</Link>
           </li>
+          
         </ul>
       </div>
 

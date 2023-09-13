@@ -86,10 +86,11 @@ function Home() {
         value={senha}
         onChange={handleSenhaChange}
       />
-      // ...
+
       <button type="button" className="btn" id="btn-envio" onClick={api}>
         Entrar
       </button>
+      
       <Modal show={showSuccessModal} onHide={() => setShowSuccessModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Sucesso</Modal.Title>
