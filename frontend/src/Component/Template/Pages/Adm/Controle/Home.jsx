@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Route, useLocation } from "react-router-dom";
-import  "./Adm.css";
+import "./Adm.css";
 // import CadastroProdutos from "./CadastroProdutos";
 // import ConferirEstoque from "./ConferirEstoque";
 // import CadastroUsuario from "./CadastroUsuario";
@@ -11,7 +11,7 @@ function Layout() {
   return (
     <div className="app-container">
       <div className="menu-adm">
-        <h2>Gerenciamento</h2>
+        <h2></h2>
         <hr />
         <ul className="nav-produtos">
           <li>
@@ -23,19 +23,23 @@ function Layout() {
           </li>
           <hr />
           <li>
-            <Link to="/CadastroUser">Cadastro de Usuário</Link>
+            <Link to="/CadastroUser">Notificações</Link>
           </li>
-          
+          <hr />
+          <li>
+            <Link to="/CadastroUser">Envio de produtos</Link>
+          </li>
+          <hr />
+          <li>
+            <Link to="/CadastroUser">Conta</Link>
+          </li>
         </ul>
       </div>
 
       <div className="Saudacao-controle">
-            <div className="boasvindas">
-                <h1>
-                    Boa noite Ryan, seja bem-vindo
-                </h1>
-            </div>
-            
+        <div className="boasvindas">
+          <h1>Sistema de gerenciamento Le Renata Cafeteria</h1>
+        </div>
       </div>
     </div>
   );
