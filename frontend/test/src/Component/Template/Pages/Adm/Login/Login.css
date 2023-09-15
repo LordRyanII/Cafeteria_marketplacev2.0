@@ -1,0 +1,36 @@
+body{
+    background-image: url('../../../../assets/img/pexels-grãos.jpg');
+        background-position: center;
+        background-size: cover; /* Para ajustar a imagem ao tamanho do cabeçalho */
+    width: 100vw;
+    height: 20em;
+}
+
+.conteudo-login{
+    border-radius: 25px;
+    margin: 30px auto;
+    text-align: center;
+    width: 50%;
+    padding: 25px;
+    background-color: #59282dcd;
+}
+
+.saudacao{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+#btn-envio{
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    width: 30%;
+    background-color: #994735a4;
+}
+
+#btn-envio:hover{
+    background-color: rgba(0, 255, 255, 0.453);
+}

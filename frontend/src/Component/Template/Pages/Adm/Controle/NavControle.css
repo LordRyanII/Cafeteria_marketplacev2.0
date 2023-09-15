@@ -1,0 +1,9 @@
+/* Adicione este CSS ao seu arquivo de estilos */
+.animated-dropdown .navbar-toggler-icon {
+    transition: transform 0.3s ease; /* Define a transição suave */
+  }
+  
+  .animated-dropdown.show .navbar-toggler-icon {
+    transform: rotate(180deg); /* Gire a seta para baixo quando o submenu é expandido */
+  }
+  
