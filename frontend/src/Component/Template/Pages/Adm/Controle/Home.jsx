@@ -12,13 +12,13 @@ function Layout() {
   return (
     <div className="app-container">
       <div className="menu-adm">
-      <OffcanvasExample />
+      <OffcanvasExample className='menu-hamburguer'/>
       </div>
-      <div className="Saudacao-controle">
+      {/* <div className="Saudacao-controle">
         <div className="boasvindas">
-          <h1>Sistema de gerenciamento Le Renata Cafeteria</h1>
+          <h1></h1>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

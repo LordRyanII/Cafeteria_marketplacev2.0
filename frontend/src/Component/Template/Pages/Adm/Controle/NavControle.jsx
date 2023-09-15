@@ -8,13 +8,15 @@ import Form from 'react-bootstrap/Form';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCubes } from '@fortawesome/free-solid-svg-icons';
 import './NavControle.css'
 
 function OffcanvasExample() {
   return (
     <Navbar expand="false" className="bg-body-tertiary mb-3">
       <Container fluid>
-        <Navbar.Brand href="#">Menu Adm</Navbar.Brand>
+        <Navbar.Brand href="#" style={{ textAlign: 'center' }}>Sistema de gerenciamento Le Renata Cafeteria</Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
           id="offcanvasNavbar"
@@ -26,11 +28,11 @@ function OffcanvasExample() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link><Link to="/Adm/CadastroProdutos" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faBell} />Notificações</Link></Nav.Link>
+              <Nav.Link><Link to="/Adm/CadastroProdutos" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faBell} />  Notificações</Link></Nav.Link>
               <hr />
-              <Nav.Link><Link to="/Adm/CadastroProdutos" style={{ textDecoration: 'none' }}>Cadastro de Produtos</Link></Nav.Link>
+              <Nav.Link><Link to="/Adm/CadastroProdutos" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faCoffee} />  Cadastro de Produtos</Link></Nav.Link>
               <hr />
-              <Nav.Link><Link to="/Adm/EstoqueProdutos" style={{ textDecoration: 'none' }}>Conferir Estoque</Link></Nav.Link>
+              <Nav.Link><Link to="/Adm/EstoqueProdutos" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faCubes} size="2x" />    Conferir Estoque</Link></Nav.Link>
               <hr />
               <NavDropdown
                 title="Logística"

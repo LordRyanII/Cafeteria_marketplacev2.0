@@ -1,9 +1,16 @@
-/* Adicione este CSS ao seu arquivo de estilos */
-.animated-dropdown .navbar-toggler-icon {
-    transition: transform 0.3s ease; /* Define a transição suave */
+/* Defina a altura desejada para o Navbar recolhido */
+.navbar:not(.show) {
+    height: 100px;
+    background-color: #7a3e28a5;
+    padding: 10px;
   }
   
-  .animated-dropdown.show .navbar-toggler-icon {
-    transform: rotate(180deg); /* Gire a seta para baixo quando o submenu é expandido */
+  .navbar{
+    background-color: #7a3e28a5;
   }
-  
+  /* CSS personalizado para mover o ícone do "hamburguer" para o lado esquerdo */
+.navbar-toggler-icon {
+    position: absolute;
+
+    left: 10px; /* Ajuste a posição conforme necessário */
+  }
