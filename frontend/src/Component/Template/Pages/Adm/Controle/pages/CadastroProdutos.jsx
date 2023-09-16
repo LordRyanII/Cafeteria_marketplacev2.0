@@ -7,15 +7,16 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-import { Alert } from "bootstrap";
+import Alert from "react-bootstrap/Alert";
 import { Navigate, useNavigate } from "react-router-dom";
 
 function CadastroProdutos() {
-  const [produto, setProduto] = useState(""); //Adiciona os values aqui
+  const [produto, setProduto] = useState("");
   const [descricao, setDescricao] = useState("");
   const [precoCompra, setPrecoCompra] = useState(0);
   const [quantidade, setQuantidade] = useState(0);
   const [image, setImage] = useState("");
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const navigate = useNavigate();
 
   const handleFormSubmit = async (e) => {
@@ -30,18 +31,21 @@ function CadastroProdutos() {
         quantidade,
         image,
       });
-
-      // Lide com a resposta aqui, por exemplo, exiba uma mensagem de sucesso.
-      Alert('Produto cadastrado com sucesso!');
-      navigate('/Adm/controle/EstoqueProdutos');
-      // Limpe o formulário após o envio bem-sucedido, se desejar.
-      setProduto("");
-      setDescricao("");
-      setPrecoCompra(0);
-      setQuantidade(0);
-      setImage("");
+      if (response.status === 200 || response.Status === "Ok") {
+        setShowSuccessAlert(true);
+        setTimeout(() => {
+          setShowSuccessAlert(false);
+        }, 3000);
+        navigate("/Adm/controle/EstoqueProdutos");
+        setProduto("");
+        setDescricao("");
+        setPrecoCompra(0);
+        setQuantidade(0);
+        setImage("");
+      } else {
+        alert("Erro");
+      }
     } catch (error) {
-      // Lide com erros aqui, por exemplo, exiba uma mensagem de erro.
       console.error("Erro ao cadastrar o produto", error);
     }
   };
@@ -55,6 +59,11 @@ function CadastroProdutos() {
           descricao: "Cadastre produtos que serão usados na cafeteria",
           conteudo: (
             <Form onSubmit={handleFormSubmit}>
+              {showSuccessAlert && (
+                <Alert variant="success">
+                  Produto cadastrado com sucesso!
+                </Alert>
+              )}
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridEmail">
                   <Form.Label>Produto:</Form.Label>
