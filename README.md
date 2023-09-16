@@ -1,6 +1,7 @@
 
 # Cafeteria_marketplacev2.0
  <h2>Sistema de cadastro de produtos, simulando uma cafeteria. Sistema FullStack com node.js</h2> <br>
+ ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) 
  <p> O sistema tem mecânica CRUD (create, read, update e delete), autenticação, login e futuramente chatbot integrado. Se chama v2, pois a primeira versão usava o padrão mvc com o uso do ejs, esse padrão era um pouco limitado. </p><br>
 - Frameworks, bibliotecas usadas e banco de dados<br>
 <ul>
