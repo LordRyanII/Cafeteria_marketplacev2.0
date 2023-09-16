@@ -15,9 +15,9 @@ import './NavControle.css'
 function OffcanvasExample() {
   return (
     <Navbar expand="false" className="bg-body-tertiary mb-3">
-      <Container fluid>
-        <Navbar.Brand href="#" style={{ textAlign: 'center' }}>Sistema de gerenciamento Le Renata Cafeteria</Navbar.Brand>
-        <Navbar.Toggle aria-controls="offcanvasNavbar" />
+      <Container fluid >
+        <Navbar.Brand href="#" className='NomeSistema'><span className='tituloSistema'>Sistema de gerenciamento Le Renata Cafeteria</span></Navbar.Brand>
+        <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginBottom: '25px' }}/>
         <Navbar.Offcanvas
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
@@ -28,9 +28,9 @@ function OffcanvasExample() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link><Link to="/Adm/CadastroProdutos" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faBell} />  Notificações</Link></Nav.Link>
+              <Nav.Link><Link to="/Adm/controle/Notificacao" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faBell} />  Notificações</Link></Nav.Link>
               <hr />
-              <Nav.Link><Link to="/Adm/CadastroProdutos" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faCoffee} />  Cadastro de Produtos</Link></Nav.Link>
+              <Nav.Link><Link to="/Adm/controle/CadastroProdutos/" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faCoffee} />  Cadastro de Produtos</Link></Nav.Link>
               <hr />
               <Nav.Link><Link to="/Adm/EstoqueProdutos" style={{ textDecoration: 'none' }}><FontAwesomeIcon icon={faCubes} size="2x" />    Conferir Estoque</Link></Nav.Link>
               <hr />

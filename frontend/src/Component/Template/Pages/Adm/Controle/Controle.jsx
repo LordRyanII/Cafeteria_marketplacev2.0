@@ -1,10 +1,11 @@
 import React from "react";
-import Controle from './Home';
-
+import Home from './Home';
 
 
 function Controle(){
     return(
-        <Controle />
+        <Home />
     )
 }
+
+export default Controle

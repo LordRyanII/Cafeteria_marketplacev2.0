@@ -7,6 +7,7 @@
   
   .navbar{
     background-color: #7a3e28a5;
+    width: 100%;
   }
   /* CSS personalizado para mover o ícone do "hamburguer" para o lado esquerdo */
 .navbar-toggler-icon {
@@ -14,3 +15,15 @@
 
     left: 10px; /* Ajuste a posição conforme necessário */
   }
+
+.NomeSistema{
+  text-align: center;
+  margin-left: 350px;
+  font-size: 350px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(101, 8, 8);
+}
+
+.tituloSistema{
+  text-align:center ;
+}

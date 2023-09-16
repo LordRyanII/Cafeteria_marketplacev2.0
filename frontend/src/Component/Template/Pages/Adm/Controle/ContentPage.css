@@ -1,0 +1,17 @@
+.conteudoPagina{
+    margin-top: 5px;
+    background-color: white;
+    width: 85%;
+    border-radius: 20px;
+    margin: auto;
+    height: 100vh;
+    padding: 25px;
+}
+
+.conteudoPagina > .tituloPagina{
+    text-align: center;
+}
+
+.descricaoPagina{
+    text-align: center;
+}
