@@ -8,6 +8,7 @@ import Login from '../Component/Template/Pages/Adm/Login/Login';
 import AdmControle from '../Component/Template/Pages/Adm/Controle/Home';
 import Notificacoes from "./Template/Pages/Adm/Controle/pages/Notificacao";
 import CadastroProdutos from "./Template/Pages/Adm/Controle/pages/CadastroProdutos";
+import ListaProdutos from "./Template/Pages/Adm/Controle/pages/ListaProdutos";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Adm/controle" element={<AdmControle />} />
         <Route path="/Adm/controle/Notificacao/" element={<Notificacoes />} />
         <Route path="/Adm/controle/CadastroProdutos/" element={<CadastroProdutos />} />
+        <Route path="/Adm/controle/EstoqueProdutos/" element={<ListaProdutos />} />
         
         
       </Routes>
