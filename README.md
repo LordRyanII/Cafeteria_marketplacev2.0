@@ -1,5 +1,6 @@
 
 
+
 # Cafeteria_marketplacev2.0
  <h2>Sistema de cadastro de produtos, simulando uma cafeteria. Sistema FullStack com node.js</h2> <br>
  
@@ -24,13 +25,13 @@
 - Futuramente sistema de chatbot integrado
 <br>
 <h2>Intalação Backend</h2>
-<p>Por enquanto o backend não está ligado ao frontend, porém no backend é possível criar os produtos, porém é necessário usar o postman</p>
+<p>É possível usar apenas o backend, pode-se usar para testar as apis. Também pode ser usado para outros projetos, basta adicionar suas credenciais de banco de dados e adaptar.</p>
 - Na pasta backend, no terminal, tanto do vscode ou poweShell. Digite: npm i (para instalar as bibliotecas)<br>
 - Após é necessário criar um arquivo .env, nele crie uma variável chamada: URLCONNECTIONMONGO, e coloque o valor da uri do seu banco de dados mongoDb <br>
 - No postman, copie as uri, o terminal do vscode ou powerShell se tudo ocorrer bem mostrará uma mensagem assim: <br>
 https://github.com/LordRyanII/Cafeteria_marketplacev2.0/blob/main/frontend/src/Component/assets/img/image.png
 
-- Após use as seguinter uri: 
+- Após use as seguinte uri: 
 	-  GET: http://localhost:3002/produtos/res/produtos/  => Lista produtos do banco de dados | 
 	- POST: http://localhost:3002/produtos/create/produto/ => Cria os Produtos 
 		- Body:
@@ -50,5 +51,16 @@ https://github.com/LordRyanII/Cafeteria_marketplacev2.0/blob/main/frontend/src/C
 		- Body: Campos do post que queira atualizar, mas o id do produto
 
 <br>
-
+<h2>Intalação Frontend</h2>
+<p>Para usar o frontend é necessário que o backend esteja funcionando. Para isso siga os passos anterior.</p>
+- Primeiro na pasta raiz do projeto, no terminal digite: cd frontend
+	- Após digite: npm i (para instalar as dependências)
+	- Seguido digite: npm start
+	- Se tudo ocorrer bem o sistema irá abrir uma página web
+- Rotas e suas funcionalidades:
+	- O sistema por padrão irá abrir a página com essa url: /
+	- Pode se interagir com a página de usuário
+	- Para fazer login e entrar na página do adm, adicione na url: /Adm/login
+	- Faça login
+	- Após será possível criar, modificar e excluír produtos do backend de modo visual	
 <br>
