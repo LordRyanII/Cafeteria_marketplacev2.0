@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Nav.css'
 
 function Nav() {
@@ -32,7 +33,7 @@ function Nav() {
               <ul className="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown1">
                 <li>
                   <a className="dropdown-item" href="#">
-                    Cardápio
+                    <Link to="/produtos/cardapio">Cardápio</Link>
                   </a>
                 </li>
                 <li>
