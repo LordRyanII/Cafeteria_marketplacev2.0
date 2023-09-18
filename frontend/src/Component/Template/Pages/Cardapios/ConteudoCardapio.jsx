@@ -35,7 +35,7 @@ function ConteudoCardapio() {
           <Card.Img variant="top" src={primeiroProduto.image} />
           <Card.Body>
             <Card.Text style={{textAlign: 'center'}}>
-              {primeiroProduto.descricao + ' .confira abaixo'}
+              {primeiroProduto.descricao + ' confira abaixo :)'}
             </Card.Text>
           </Card.Body>
         </Card>

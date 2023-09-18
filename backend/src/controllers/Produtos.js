@@ -4,7 +4,7 @@ const SchemmaCreate = require('../../Models/CreateProdutos/SchemmaCreateProdutos
 //Controller para criação de produtos no mongoDb
 exports.Create = (req, res) => {
     console.log(req.body);
-    if(req.body.descricao.length <= 20){
+    if(req.body.descricao.length <= 150){
         const novoProduto = new SchemmaCreate({
             produto: req.body.produto,
             descricao: req.body.descricao,
@@ -30,7 +30,7 @@ exports.Create = (req, res) => {
     }else {
         return res.status(400).json({
             'Status': 'Nok',
-            'message':'O campo descrição deve conter até 20 caracteres'
+            'message':'O campo descrição deve conter até 150 caracteres'
         })
     }    
 
