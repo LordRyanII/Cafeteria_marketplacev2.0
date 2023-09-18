@@ -56,7 +56,8 @@ https://github.com/LordRyanII/Cafeteria_marketplacev2.0/blob/main/frontend/src/C
 - Primeiro na pasta raiz do projeto, no terminal digite: cd frontend <br>
 	- Após digite: npm i (para instalar as dependências);<br>
 	- Seguido digite: npm start;<br>
-	- Se tudo ocorrer bem o sistema irá abrir uma página web;<br>
+	- Se tudo ocorrer bem o sistema irá abrir uma página web;
+ <br>
  <br>
 - Rotas e suas funcionalidades:<br>
 	- O sistema por padrão irá abrir a página com essa url: /<br>
