@@ -4,15 +4,15 @@ const SchemmaCreate = require('../../Models/CreateProdutos/SchemmaCreateProdutos
 //Controller para criação de produtos no mongoDb
 exports.Create = (req, res) => {
     console.log(req.body);
-    const novoProduto = new SchemmaCreate({
-        produto: req.body.produto,
-        descricao: req.body.descricao,
-        preco_compra: req.body.preco_compra,
-        quantidade: req.body.quantidade,
-        image: req.body.image
-    });
-
-    novoProduto.save()
+    if(req.body.descricao.length <= 20){
+        const novoProduto = new SchemmaCreate({
+            produto: req.body.produto,
+            descricao: req.body.descricao,
+            preco_compra: req.body.preco_compra,
+            quantidade: req.body.quantidade,
+            image: req.body.image
+        })
+        novoProduto.save()
         .then(result => {
             res.status(200).json({
                 'Status': 'Ok',
@@ -26,6 +26,14 @@ exports.Create = (req, res) => {
                 'message': 'Houve um erro na hora da criação'
             });
         });
+    
+    }else {
+        return res.status(400).json({
+            'Status': 'Nok',
+            'message':'O campo descrição deve conter até 20 caracteres'
+        })
+    }    
+
 }
 
 //Controller para listagem de produtos no mongoDb
