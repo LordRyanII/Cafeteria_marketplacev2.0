@@ -54,13 +54,14 @@ https://github.com/LordRyanII/Cafeteria_marketplacev2.0/blob/main/frontend/src/C
 <h2>Intalação Frontend</h2>
 <p>Para usar o frontend é necessário que o backend esteja funcionando. Para isso siga os passos anterior.</p>
 - Primeiro na pasta raiz do projeto, no terminal digite: cd frontend <br>
-	- Após digite: npm i (para instalar as dependências)<br>
-	- Seguido digite: npm start<br>
-	- Se tudo ocorrer bem o sistema irá abrir uma página web<br>
+	- Após digite: npm i (para instalar as dependências);<br>
+	- Seguido digite: npm start;<br>
+	- Se tudo ocorrer bem o sistema irá abrir uma página web;<br>
+ <br>
 - Rotas e suas funcionalidades:<br>
 	- O sistema por padrão irá abrir a página com essa url: /<br>
-	- Pode se interagir com a página de usuário<br>
-	- Para fazer login e entrar na página do adm, adicione na url: /Adm/login<br>
-	- Faça login<br>
-	- Após será possível criar, modificar e excluír produtos do backend de modo visual	<br>
+	- Pode se interagir com a página de usuário;<br>
+	- Para fazer login e entrar na página do adm, adicione na url: /Adm/login ;<br>
+	- Faça login;<br>
+	- Após será pssível criar, modificar e excluír produtos do backend de modo visual;	<br>
 <br>
