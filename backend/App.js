@@ -7,14 +7,13 @@ const routes = require('./src/routes/Rotaprincipal');
 const cors = require('cors');
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Substitua isso pelo endereço do seu aplicativo React
+    origin: 'http://localhost:3000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
 }));
-app.use(express.urlencoded({
-    extended: true
-}));
+
+app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 app.listen(porta, () => {

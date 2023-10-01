@@ -9,7 +9,7 @@ function header() {
       
       </div> */}
       <h1 className={Style.headerTop}>
-        <strong> Le Renata</strong>
+        Le Renata
         <span><i>Cafeteria</i></span>
       </h1>
     </header>

@@ -38,11 +38,6 @@ function Nav() {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Para a viagem
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
                     Sobre
                   </a>
                 </li>
@@ -97,11 +92,6 @@ function Nav() {
                 <li>
                   <a className="dropdown-item" href="#">
                     Estacionamento
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Horário de Atendimento
                   </a>
                 </li>
               </ul>

@@ -5,7 +5,7 @@ module.exports = class Database {
   _connect(Uri) {
        mongoose.connect(Uri)
          .then(() => {
-           console.log('Database connection successful')
+           console.log('base connection successful')
          })
          .catch(err => {
            console.error('Database connection error')

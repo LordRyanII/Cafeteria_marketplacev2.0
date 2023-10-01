@@ -1,8 +1,12 @@
+@font-face {
+    font-family: 'header';
+    src: url('../../assets/css/The\ California.ttf') format('truetype');
+  }
 
 /* Cabaçalho*/
 header {
     margin-top: -15px;
-    background-image: url(../../assets/img/pexels-quintin-gellar-696205.jpg);
+    background-image: url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-position: center;
     background-size: cover; /* Para ajustar a imagem ao tamanho do cabeçalho */
     width: 100vw;
@@ -10,8 +14,10 @@ header {
 }
 
 .headerTop {
+    padding-top: 55px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150px;
+    font-family: 'header';
 }
 
 span{
